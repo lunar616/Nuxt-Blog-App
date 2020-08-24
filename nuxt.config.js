@@ -33,6 +33,10 @@ export default {
   css: [
     { src: '~/assets/scss/main.scss', lang: 'scss' },
   ],
+  layoutTransition: {
+    name: 'fade',
+    mode: 'out-in',
+  },
   pageTransition: {
     name: 'fade',
     mode: 'out-in',
