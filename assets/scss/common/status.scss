@@ -1,0 +1,22 @@
+.status {
+  &:before {
+    display: inline-block;
+    content: '\A';
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  &.false {
+    color: #ff5722;
+    &:before {
+      background: #ff5722;
+    }
+  }
+  &.true {
+    color: #8bc34a;
+    &:before {
+      background: #8bc34a;
+    }
+  }
+}

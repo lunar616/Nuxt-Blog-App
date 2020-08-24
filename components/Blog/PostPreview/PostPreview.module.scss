@@ -1,0 +1,35 @@
+.post-preview {
+  display: grid;
+  grid-template-rows: 1fr max-content;
+  margin-bottom: 20px;
+  padding: 16px;
+  height: 100%;
+  width: 33%;
+  text-align: center;
+
+  img {
+    margin-bottom: 16px;
+  }
+
+  .post-content {
+    .post-content__text {
+      color: #999;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .post-preview {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .post-preview {
+    width: 100%;
+  }
+}

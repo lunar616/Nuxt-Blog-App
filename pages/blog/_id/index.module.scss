@@ -1,0 +1,23 @@
+.post {
+  margin: 0 auto;
+  max-width: 900px;
+
+  .post-header {
+    margin-bottom: 30px;
+    text-align: center;
+
+    img {
+      margin-bottom: 16px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    p {
+      color: #999;
+    }
+  }
+
+  .post-body {
+    text-align: left;
+  }
+}
