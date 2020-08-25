@@ -33,6 +33,7 @@ export default {
   },
   methods: {
     onSubmit() {
+      console.log(this.$route.params)
       axios.post('http://localhost:3000/telegram.php', { ...this.user })
         .then(() => {
           this.error = null;

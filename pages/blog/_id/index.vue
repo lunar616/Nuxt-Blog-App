@@ -36,6 +36,9 @@ export default {
       ],
     };
   },
+  validate({params, store}) {
+    return store.state.postsLoaded.some(post => post.id === params.id);
+  },
   async asyncData(context) {
     let [post, comments] = await Promise.all([
       axios.get(`https://nuxt-blog-app-be092.firebaseio.com/posts/${context.params.id}.json`),
