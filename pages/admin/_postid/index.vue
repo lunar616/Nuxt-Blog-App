@@ -12,7 +12,7 @@ export default {
   },
   layout: 'admin',
   validate({params, store}) {
-    return store.state.postsLoaded.some(post => post.id === params.id);
+    return store.state.postsLoaded.some(post => post.id === params.postid);
   },
   asyncData(context) {
     return axios.get(`https://nuxt-blog-app-be092.firebaseio.com/posts/${context.params.postid}.json`)
