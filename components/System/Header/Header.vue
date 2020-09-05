@@ -12,6 +12,7 @@
             >
               <nuxt-link 
                 class="navbar-link"
+                active-class="navbar-link-active"
 		            :title="link.title" 
                 :to="link.url"
               >

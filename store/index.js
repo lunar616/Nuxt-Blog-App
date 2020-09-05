@@ -46,6 +46,7 @@ export const actions = {
       returnSecureToken: true,
     })
       .then(res => {
+        console.log(res.data)
         let token = res.data.idToken;
 
         commit('setToken', token);
